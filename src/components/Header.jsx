@@ -12,8 +12,8 @@ const Header = () => {
         </h2>
       </div>
       <div className="flex gap-5 text-xl">
-        <Link>Home</Link>
         <Link>About</Link>
+        <Link>Skills</Link>
         <Link>Project</Link>
         <Link>Contract</Link>
       </div>

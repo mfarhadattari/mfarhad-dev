@@ -4,7 +4,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <nav className="w-full px-20 py-10 sticky z-50 flex justify-between items-center">
+    <nav className="w-full px-20 py-10 sticky top-0 z-50 flex justify-between items-center bg-slate-950">
       <div className="flex gap-2 items-center">
         <img src={icon} alt="Mohammad Farhad" className="w-7 h-7" />
         <h2 className="text-2xl font-Preahvihear">

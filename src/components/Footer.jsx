@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <footer className="container mx-auto p-10" id="contract">
-      <div className="flex flex-col md:flex-row justify-between gap-10 md:w-3/4 mx-auto ">
+      <div className="flex flex-col md:flex-row justify-between md:items-end gap-10 md:w-3/4 mx-auto ">
         <div className="text-xl space-y-2">
           <p className="flex gap-2 items-center">
             <FaPhone></FaPhone>01568306714 , 01873141933

@@ -10,8 +10,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto p-10">
-      <div className="flex justify-between w-3/4 mx-auto items-end">
+    <footer className="container mx-auto p-10" id="contract">
+      <div className="flex flex-col md:flex-row justify-between gap-10 md:w-3/4 mx-auto ">
         <div className="text-xl space-y-2">
           <p className="flex gap-2 items-center">
             <FaPhone></FaPhone>01568306714 , 01873141933
@@ -25,7 +25,7 @@ const Footer = () => {
             Chattogram, Bangladesh
           </p>
         </div>
-        <div className="flex flex-col items-end">
+        <div className="flex flex-col items-center">
           <div className="flex gap-5 text-3xl">
             <a href="https://github.com/mfarhadattari">
               <FaGithub></FaGithub>
@@ -37,7 +37,7 @@ const Footer = () => {
               <FaFacebook></FaFacebook>
             </a>
           </div>
-          <div className="mt-3 text-right">
+          <div className="mt-3 flex flex-col items-end">
             <p className="flex items-center gap-3">
               Developed By <FaHeart className="text-red-500"></FaHeart>
             </p>

@@ -1,15 +1,15 @@
 import photo from "../assets/mfarhad.png";
 const Banner = () => {
   return (
-    <section className={`container mx-auto mt-20`} id="about">
-      <div className="flex flex-col md:flex-row items-center">
-        <div className="ms-20 w-1/2 ">
+    <section className={`container mx-auto`} id="about">
+      <div className="flex flex-col-reverse md:flex-row items-center p-10 gap-5">
+        <div className="md:w-1/2 text-center md:text-left">
           <div className="space-y-2">
             <p className="text-xl">Web Developer</p>
             <h1 className="text-4xl font-Preahvihear font-bold">
               Mohammad Farhad
             </h1>
-            <p>
+            <p className="text-justify">
               Front-End Web Developer With a specialization in front-end and
               back-end web development. Adoptable to new technology to enhance
               my skills and capability.
@@ -22,7 +22,7 @@ const Banner = () => {
           </button>
         </div>
         <div>
-          <img src={photo} alt="Mohammad Farhad" className="w-[350px] h-[350px] mx-auto" />
+          <img src={photo} alt="Mohammad Farhad" className="w-[200px] h-[200px] md:w-[350px] md:h-[350px] mx-auto" />
         </div>
       </div>
     </section>

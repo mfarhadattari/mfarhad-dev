@@ -5,9 +5,9 @@ import mongodb from '../assets/skills/mongodb.svg'
 
 const Skills = () => {
   return (
-    <section className="container mx-auto  my-20">
+    <section className="container mx-auto  my-20" id='skill'>
       <h1 className="text-center text-4xl">SKILLS</h1>
-      <div className='w-fit mx-auto flex gap-5 mt-10'>
+      <div className='w-fit mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10'>
         <div className="border rounded-lg p-5 w-52 h-52 text-2xl flex flex-col items-center justify-center">
           <img src={react} alt="" />
           <h2>React</h2>

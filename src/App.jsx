@@ -1,7 +1,7 @@
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Projects from "./components/Projects";
+import Project from "./components/Project";
 import Skills from "./components/Skills";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <Skills></Skills>
-      <Projects></Projects>
+      <Project></Project>
       <Footer></Footer>
     </div>
   );

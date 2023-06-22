@@ -1,29 +1,24 @@
-import react from '../assets/skills/react.svg'
-import express from '../assets/skills/expressjs-icon.svg'
-import node from '../assets/skills/node.svg'
-import mongodb from '../assets/skills/mongodb.svg'
+import skills from "../data/skills";
 
 const Skills = () => {
   return (
-    <section className="container mx-auto  my-20" id='skill'>
-      <h1 className="text-center text-4xl">SKILLS</h1>
-      <div className='w-fit mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10'>
-        <div className="border rounded-lg p-5 w-52 h-52 text-2xl flex flex-col items-center justify-center">
-          <img src={react} alt="" />
-          <h2>React</h2>
-        </div>
-        <div className="border rounded-lg p-5 w-52 h-52 text-2xl flex flex-col items-center justify-center">
-          <img src={express} alt="" />
-          <h2>Express</h2>
-        </div>
-        <div className="border rounded-lg p-5 w-52 h-52 text-2xl flex flex-col items-center justify-center">
-          <img src={node} alt="" />
-          <h2>Node</h2>
-        </div>
-        <div className="border rounded-lg p-5 w-52 h-52 text-2xl flex flex-col items-center justify-center">
-          <img src={mongodb} alt="" />
-          <h2>Mongo DB</h2>
-        </div>
+    <section className="container mx-auto  my-20" id="skill">
+      <h1 className="text-center text-4xl" data-aos="zoom-in">SKILLS</h1>
+      <div className="w-fit mx-auto grid grid-cols-2 md:grid-cols-5 justify-center  mt-10" >
+        {skills.map((skill, id) => (
+          <div
+            key={id}
+            className="rounded-lg p-5  gap-2 flex flex-col items-center justify-center"
+            data-aos="fade-up"
+          >
+            <img
+              src={skill.icon}
+              alt={skill.name}
+              className="h-[50px] w-[50px]"
+            />
+            <h2 className="text-center text-xl">{skill.name}</h2>
+          </div>
+        ))}
       </div>
     </section>
   );

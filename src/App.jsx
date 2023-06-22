@@ -1,12 +1,12 @@
 import Banner from "./components/Banner";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Project from "./components/Project";
 import Skills from "./components/Skills";
+import Project from "./components/Project";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-slate-950 text-white min-h-screen w-full">
+    <div className="bg-slate-950 text-white min-h-screen font-space-grotesk w-full">
       <Header></Header>
       <Banner></Banner>
       <Skills></Skills>

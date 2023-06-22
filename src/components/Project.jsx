@@ -1,15 +1,7 @@
-import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
+import projects from "../data/projects.js";
 
 const Project = () => {
-  const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    fetch("/data/projects.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProjects(data);
-      });
-  }, []);
   return (
     <section className="container mx-auto my-20" id="project">
       <h1 className="text-center text-4xl">Project</h1>

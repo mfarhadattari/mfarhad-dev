@@ -2,7 +2,7 @@ import { FaGithub, FaLink, FaServer } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="bg-white rounded-lg shadow">
+    <div className="bg-white rounded-lg shadow relative h-[500px]">
       <a href={project?.liveLink} target="blank">
         <img
           className="rounded-t-lg h-[250px] w-full"
@@ -19,7 +19,12 @@ const ProjectCard = ({ project }) => {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {project?.description}
         </p>
-        <div className="flex gap-5 items-center">
+        <div className="text-black flex flex-wrap gap-x-3 font-bold">
+          {project.technology.map((tec, id) => (
+            <li className="list-none text-gray-600" key={id}>{tec}</li>
+          ))}
+        </div>
+        <div className="flex gap-5 items-center absolute bottom-3">
           <a
             href={project?.liveLink}
             target="blank"

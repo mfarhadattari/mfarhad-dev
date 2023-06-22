@@ -7,6 +7,7 @@ import {
   FaMapMarkerAlt,
   FaPhone,
 } from "react-icons/fa";
+import personalInfo from "../data/personal.js";
 
 const Footer = () => {
   return (
@@ -14,26 +15,26 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between md:items-end gap-10 md:w-3/4 mx-auto ">
         <div className="text-xl space-y-2">
           <p className="flex gap-2 items-center">
-            <FaPhone></FaPhone>01568306714 , 01873141933
+            <FaPhone></FaPhone>{personalInfo.phone}
           </p>
           <p className="flex gap-2 items-center">
             <FaEnvelope></FaEnvelope>
-            <a href="mailto:mfarhad.dev@gmail.com">mfarhad.dev@gmail.com</a>
+            <a href="mailto:mfarhad.dev@gmail.com">{personalInfo.email}</a>
           </p>
           <p className="flex gap-2 items-center">
             <FaMapMarkerAlt></FaMapMarkerAlt>
-            Chattogram, Bangladesh
+            {personalInfo.location}
           </p>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex gap-5 text-3xl">
-            <a href="https://github.com/mfarhadattari">
+            <a href={personalInfo.github}>
               <FaGithub></FaGithub>
             </a>
-            <a href="https://www.linkedin.com/in/mfarhad-dev">
+            <a href={personalInfo.linkedin}>
               <FaLinkedin></FaLinkedin>
             </a>
-            <a href="https://www.facebook.com/mfarhad.attari.qadari">
+            <a href={personalInfo.facebook}>
               <FaFacebook></FaFacebook>
             </a>
           </div>

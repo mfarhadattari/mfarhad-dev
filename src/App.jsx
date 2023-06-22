@@ -11,11 +11,13 @@ AOS.init();
 function App() {
   return (
     <div className="bg-slate-950 text-white min-h-screen font-space-grotesk w-full">
-      <Header></Header>
-      <Banner></Banner>
-      <Skills></Skills>
-      <Project></Project>
-      <Footer></Footer>
+      <div className="max-w-6xl mx-auto">
+        <Header></Header>
+        <Banner></Banner>
+        <Skills></Skills>
+        <Project></Project>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

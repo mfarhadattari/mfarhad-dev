@@ -23,7 +23,7 @@ const Header = () => {
     </>
   );
   return (
-    <nav className="w-full p-5 md:px-10 lg:px-20 py-10 sticky top-0 z-50 bg-slate-950">
+    <nav className="w-full p-5 md:px-10  py-10 sticky top-0 z-50 bg-slate-950">
       <div className="flex justify-between items-center gap-5 w-full relative">
         <div className="flex gap-2 items-center">
           <img src={icon} alt="Mohammad Farhad" className="w-7 h-7" />

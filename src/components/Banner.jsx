@@ -3,8 +3,8 @@ import personalInfo from "../data/personal.js";
 const Banner = () => {
   return (
     <section className={`container mx-auto`} id="about">
-      <div className="lg:w-3/4 mx-auto flex flex-col-reverse md:flex-row items-center justify-between p-10 gap-5">
-        <div className="md:w-3/4 text-center md:text-left">
+      <div className="mx-auto flex flex-col-reverse md:flex-row items-center justify-between p-10 gap-5">
+        <div className="md:w-3/5 text-center md:text-left">
           <div className="space-y-2">
             <p className="text-xl">{personalInfo.title}</p>
             <h1 className="text-4xl font-bold">
@@ -22,7 +22,7 @@ const Banner = () => {
           <img
             src={personalInfo.photo}
             alt={personalInfo.name}
-            className="w-[200px] h-[200px] md:w-[300px] md:h-[280px] mx-auto"
+            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] mx-auto"
           />
         </div>
       </div>

@@ -3,7 +3,7 @@ import projects from "../data/projects.js";
 
 const Project = () => {
   return (
-    <section className="container mx-auto my-20" id="project">
+    <section className="container mx-auto my-10" id="project" >
       <h1 className="text-center text-4xl" data-aos="zoom-in">
         PROJECTS
       </h1>

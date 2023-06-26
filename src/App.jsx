@@ -2,10 +2,12 @@ import Banner from "./components/Banner";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
+import Contract from "./components/Contract";
 import Footer from "./components/Footer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Toaster } from "react-hot-toast";
 AOS.init();
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
         <Banner></Banner>
         <Skills></Skills>
         <Project></Project>
+        <Contract></Contract>
         <Footer></Footer>
+        <Toaster />
       </div>
     </div>
   );

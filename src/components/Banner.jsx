@@ -30,7 +30,7 @@ const Banner = () => {
           <img
             src={personalInfo.photo}
             alt={personalInfo.name}
-            className="w-[200px] h-[250px] md:w-[300px] md:h-[350px] mx-auto rounded-2xl animate-pulse"
+            className="w-[200px] h-[250px] md:w-[300px] md:h-[350px] mx-auto rounded-2xl"
           />
         </div>
       </div>

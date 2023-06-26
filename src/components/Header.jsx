@@ -4,24 +4,28 @@ import { FaBars, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdCancel } from "react-icons/md";
 import personalInfo from "../data/personal.js";
 
+const links = [
+  {
+    title: "About",
+    href: "#about",
+  },
+  {
+    title: "Skills",
+    href: "#skill",
+  },
+  {
+    title: "Projects",
+    href: "#project",
+  },
+  {
+    title: "Contract",
+    href: "#contract",
+  },
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navOptions = (
-    <>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#skill">Skill</a>
-      </li>
-      <li>
-        <a href="#project">Project</a>
-      </li>
-      <li>
-        <a href="#contract">Contract</a>
-      </li>
-    </>
-  );
+
   return (
     <nav className="w-full p-5 md:px-10  py-10 sticky top-0 z-50 bg-slate-950">
       <div className="flex justify-between items-center gap-5 w-full relative">
@@ -33,7 +37,11 @@ const Header = () => {
         </div>
         <div className="flex gap-3 text-xl">
           <ul className="hidden md:flex gap-3 font-medium items-center">
-            {navOptions}
+            {links.map((link, id) => (
+              <li key={id}>
+                <a href={link.href}>{link.title}</a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="flex gap-3 text-2xl items-center">
@@ -53,13 +61,15 @@ const Header = () => {
             {menuOpen ? <MdCancel></MdCancel> : <FaBars></FaBars>}
           </button>
         </div>
-        <div
-          className={`md:hidden absolute top-12 right-2 bg-slate-800 p-3 rounded-lg ${
-            menuOpen ? "" : "hidden"
-          }`}
-        >
-          <ul className="flex flex-col font-medium rounded-lg">{navOptions}</ul>
-        </div>
+      </div>
+      <div className={`w-full md:hidden ${menuOpen ? "" : "hidden"}`}>
+        <ul className="flex flex-col font-medium mt-4 p-5 rounded-lg bg-slate-700 w-full">
+          {links.map((link, id) => (
+            <li key={id}  className="hover:bg-blue-500 w-full p-2">
+              <a href={link.href}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );

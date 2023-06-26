@@ -82,7 +82,7 @@ const Contract = () => {
         </div>
         <div
           className="w-full md:w-1/2"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >

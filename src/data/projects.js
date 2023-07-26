@@ -1,6 +1,6 @@
 const projects = [
   {
-    name: "DMF Language Academy",
+    name: "DMF Language Club",
     image: "https://i.ibb.co/BtHxXJY/Screenshot-2023-06-18-103432.png",
     description:
       "An Educational application with admin, instructor and student role.",

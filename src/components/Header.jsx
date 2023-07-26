@@ -65,8 +65,17 @@ const Header = () => {
       <div className={`w-full md:hidden ${menuOpen ? "" : "hidden"}`}>
         <ul className="flex flex-col font-medium mt-4 p-5 rounded-lg bg-slate-700 w-full">
           {links.map((link, id) => (
-            <li key={id}  className="hover:bg-blue-500 w-full p-2">
-              <a href={link.href}>{link.title}</a>
+            <li
+              key={id}
+              className="w-full"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <a
+                href={link.href}
+                className="hover:bg-blue-500 block w-full p-2"
+              >
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>

@@ -49,7 +49,12 @@ const Contract = () => {
   return (
     <section className="container mx-auto my-10 p-5" id="contract">
       <div className="flex flex-col md:flex-row gap-10 items-center">
-        <div className="w-full md:w-1/2" data-aos="zoom-in">
+        <div
+          className="w-full md:w-1/2"
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <h1 className="text-3xl text-center my-4">Send Message</h1>
           <form ref={form} onSubmit={sendEmail}>
             <input

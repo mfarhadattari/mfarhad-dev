@@ -11,12 +11,12 @@ const Banner = () => {
                 text={personalInfo.title}
                 loop={true}
                 speed={100}
-                delay={5000}
+                delay={3000}
               ></Typewriter>
             </p>
 
             <h1 className="text-4xl font-bold">
-              <Typewriter cursor={false} text={personalInfo.name} />
+              <Typewriter cursor={false} speed={100} text={personalInfo.name} />
             </h1>
             <p className="text-justify">{personalInfo.description}</p>
           </div>
@@ -26,7 +26,11 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <img
             src={personalInfo.photo}
             alt={personalInfo.name}

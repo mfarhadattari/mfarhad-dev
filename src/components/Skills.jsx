@@ -4,7 +4,8 @@ import skills from "../data/skills";
 const Skills = () => {
   return (
     <section className="container mx-auto my-10" id="skill">
-      <h1 className="text-center text-4xl" data-aos="zoom-in">
+      <h1 className="text-center text-4xl" data-aos="zoom-in" data-aos-easing="linear"
+          data-aos-duration="1500">
         SKILLS
       </h1>
       <div className="w-fit mx-auto grid grid-cols-2 md:grid-cols-5 justify-center  mt-10">
@@ -12,7 +13,8 @@ const Skills = () => {
           <div
             key={id}
             className="rounded-lg p-5  gap-2 flex flex-col items-center justify-center"
-            data-aos="fade-up"
+            data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="1500"
           >
             <div className={`flex justify-center items-center animate-bounce border p-4 rounded-full`}>
               <img

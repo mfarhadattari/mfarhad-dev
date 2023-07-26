@@ -5,6 +5,8 @@ const ProjectCard = ({ project }) => {
     <div
       className="bg-white rounded-lg shadow relative h-[500px]"
       data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
     >
       <img
         className="rounded-t-lg h-[250px] w-full"

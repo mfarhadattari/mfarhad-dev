@@ -4,7 +4,8 @@ import projects from "../data/projects.js";
 const Project = () => {
   return (
     <section className="container mx-auto my-10" id="project" >
-      <h1 className="text-center text-4xl" data-aos="zoom-in">
+      <h1 className="text-center text-4xl" data-aos="zoom-in" data-aos-easing="linear"
+          data-aos-duration="1500">
         PROJECTS
       </h1>
       <div
